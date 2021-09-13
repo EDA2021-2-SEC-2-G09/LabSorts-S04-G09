@@ -102,6 +102,8 @@ while True:
         print('Géneros cargados: ' + str(lt.size(catalog['tags'])))
         print('Asociación de Géneros a Libros cargados: ' +
               str(lt.size(catalog['book_tags'])))
+        n = catalog['authors']['elements']
+        print(n.DisplayName())
 
     elif int(inputs[0]) == 2:
         number = input("Buscando los TOP ?: ")
